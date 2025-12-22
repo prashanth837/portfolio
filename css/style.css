@@ -702,3 +702,36 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+    .toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 14px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  z-index: 9999;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast.success {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+}
+
+.toast.error {
+  background: linear-gradient(135deg, #e53935, #b71c1c);
+}
+
+.hidden {
+  display: none;
+}
+
